@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop — NOIRÉ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html">NOIRÉ</a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a class="active" href="catalogo.html">Shop</a>
+      <a href="catalogo.html?category=1">Tops</a>
+      <a href="catalogo.html?category=3">Jeans</a>
+    </nav>
+    <a class="cart-link" href="carrito.html">🛍 <span id="cart-count">0</span></a>
+  </header>
+
+  <main class="page">
+    <div class="catalog-header">
+      <p class="eyebrow">NOIRÉ COLLECTION</p>
+      <h1>Shop the look.</h1>
+      <p>Encuentra tu próxima obsesión.</p>
+    </div>
+
+    <section class="filters">
+      <input id="search" type="search" placeholder="Buscar una prenda...">
+      <select id="category">
+        <option value="">Todas las categorías</option>
+      </select>
+      <select id="price">
+        <option value="">Precio máximo</option>
+        <option value="70">S/ 70</option>
+        <option value="100">S/ 100</option>
+        <option value="140">S/ 140</option>
+      </select>
+    </section>
+
+    <div id="catalog-status" class="status">Cargando colección...</div>
+    <div id="catalog-products" class="product-grid"></div>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/catalogo.js"></script>
+</body>
+</html>
