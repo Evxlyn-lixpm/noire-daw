@@ -1,4 +1,5 @@
-const API_URL = "http://localhost:3000/api";
+const API_URL = "https://noire-api-6wp0.onrender.com/api";
+
 
 async function apiFetch(endpoint) {
   const response = await fetch(`${API_URL}${endpoint}`);
